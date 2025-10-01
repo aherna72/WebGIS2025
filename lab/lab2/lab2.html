@@ -43,13 +43,13 @@ document.write(Math.random());
 <script type="text/javascript">
 var str1="Hello World";
 document.write(str1);
+
+document.write("<br>");
 var x=5;
-document.write(x);
-document.write("<br> ");
 var y=10;
 var z=x+y;
-document.write(z);
-document.write("<br> ");
+document.write("x+y-"+z);
+document.write("<br><br>");
 </script>
 
 <h3>Define a function </h3>
@@ -60,8 +60,12 @@ var sum=x1+x2+x3;
 return sum;
 }
 var k=sum3(5,6,7);
-document.write(k);
-<div id="map_canvas" style="width:50%; height:50%"></div>
+document.write("sum3(5,6,7)="+k);
+document.write("<br>");
+document.write("sum3(10,20,30)="+sum3(10,20,30));
 </script>
+<h3>Interactive Map (Google Maps)</h3>
+<div id="map_canvas" style="width:50%; height:50%"></div>
+
 </body>
 </html>
