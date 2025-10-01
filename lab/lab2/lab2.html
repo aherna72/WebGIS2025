@@ -8,7 +8,8 @@ html { height:100% }
 body { height:100%; margin:0; padding:0 }
 #map_canvas { height:50vh; width:50% }
 </style>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHPYoySu2Km0SNNsqXUGvvS5t8CjHiy6w&callback=initMap"></script
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlPWng8uQi-9VIqLsxFhJunDnmfZbAr-w&callback=initMap"></script>
+
 <script>
 function initMap() {
         // Map 1
@@ -16,9 +17,16 @@ function initMap() {
         center: { lat: 35.30724862160677, lng: -80.73020477388147 }, // UNCC Campus
         zoom: 15
     });
+
+        // Map 2
+        var map2 = new google.maps.Map(document.getElementById('map2'), {
+        center: { lat: 35.22721307741346, lng: -80.84308519823675 }, // Charlotte City Center (Focused on the Trade Street, Tryon Street Intersection)
+        zoom: 14
+    });
+   
 }
- </script>
- <<body onload="initMap()">
+</script>
+<<body onload="initMap()">
   
 <script>
 function initialize()
