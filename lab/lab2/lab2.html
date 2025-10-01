@@ -8,11 +8,18 @@ html { height:100% }
 body { height:100%; margin:0; padding:0 }
 #map_canvas { height:50vh; width:50% }
 </style>
-<script
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHPYoySu2Km0SNNsqXUGvvS5t8CjHiy6w">
-</script>
-<h3>Interactive Map (Google Maps)</h3>
-<div id="map_canvas" style="width:50%; height:50%"></div>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHPYoySu2Km0SNNsqXUGvvS5t8CjHiy6w&callback=initMap"></script
+<script>
+function initMap() {
+        // Map 1
+        var map1 = new google.maps.Map(document.getElementById('map1'), {
+        center: { lat: 35.30724862160677, lng: -80.73020477388147 }, // UNCC Campus
+        zoom: 15
+    });
+}
+ </script>
+ <<body onload="initMap()">
+  
 <script>
 function initialize()
 {
